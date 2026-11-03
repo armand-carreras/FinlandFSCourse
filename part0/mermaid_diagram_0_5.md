@@ -1,0 +1,15 @@
+```mermaid
+sequenceDiagram
+    participant user
+    participant browser
+    participant server
+
+    browser --> server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+    server --> browser: HTML Document
+    server --> browser: css
+    server --> browser: js
+    server --> browser: json
+    server --> browser: error 404
+    deactivate server
+```
